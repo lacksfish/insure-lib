@@ -1,0 +1,51 @@
+{
+  "name": "insure-lib",
+  "version": "0.1.0",
+  "description": "Library performing core functionality for bitcoin cryptocurrency life insurance transactions",
+  "repository": "git@github.com:lacksfish/insure-lib.git",
+  "main": "lib/main.js",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "build": "npm run build:js",
+    "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+    "build:rollup": "rollup -c rollup.config.js",
+    "watch": "npm run build:js -- --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run build"
+  },
+  "author": "lacksfish",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/polyfill": "^7.10.4",
+    "@babel/runtime": "^7.10.4",
+    "@ledgerhq/hw-app-btc": "5.19.0",
+    "@ledgerhq/hw-transport-node-hid-noevents": "5.19.0",
+    "@types/node": "^12.12.47",
+    "async-lock": "^1.2.4",
+    "bitcoinjs-lib": "^5.1.10",
+    "crypto-js": "^3.1.9-1",
+    "electrum-api": "git+https://github.com/kaplanmaxe/electrum-api.git",
+    "json-rpc-tls": "^1.2.2",
+    "regenerator-runtime": "^0.13.3",
+    "safe-buffer": "^5.2.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-typescript": "^7.6.0",
+    "@rollup/plugin-babel": "^5.0.4",
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-json": "^4.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "rollup-plugin-cleanup": "^3.1.1",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "babel-preset-minify": "^0.5.1",
+    "rollup": "^2.3.1",
+    "typescript": "^3.6.3"
+  }
+}
