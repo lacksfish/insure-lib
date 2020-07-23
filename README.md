@@ -59,13 +59,13 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This library will be utilized for an upcoming UI project providing bitcoin life insurance functionality for everyone. 
+This library is [used in the GUI project](https://github.com/lacksfish/insure-gui) providing bitcoin life insurance functionality for everyone. 
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Don't use this library of you don't understand what it is trying to do. If you want to use it, I suggest you wait for the UI to roll around soon.
+Don't use this library of you don't understand what it is trying to do. If you want to use it, I suggest you familiarize yourself with the [GUI using this library.](https://github.com/lacksfish/insure-gui)
 
 
 <!-- ROADMAP -->
